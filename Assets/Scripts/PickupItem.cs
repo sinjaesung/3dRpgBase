@@ -10,7 +10,6 @@ public class PickupItem : Interactable
     {
         if (ItemDrop != null)
         {
-            Debug.Log("itemDrop¹ºµ¥?:" + ItemDrop.ItemName);
             InventoryController.Instance.GiveItem(ItemDrop);
             Destroy(gameObject);
         }
